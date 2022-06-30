@@ -13,10 +13,24 @@ class BonjourController extends AbstractController
 
 
     public function home () {
+
+        $category = [
+            'title' => 'Politique',
+            'color' => 'red',
+            'published' => true,
+            'description' => "Decrypter l'actualité politique avec le prisme de David Robert"
+        ];
+
         $name = 'Tom';
+
         return $this->render ('home.html.twig', [
-            'name' => $name
+            'name' => $name,
+            'category' => $category
         ]);
+
+
     }
+
+
 
 }
