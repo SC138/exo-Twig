@@ -8,7 +8,8 @@
             {% if category .published %}
             <li>{{ category. title }}</li>
             <img src="{{ category. image }}" alt="Les gens trop chiants de France">
-                <a href="{{ path('gens_nul', {'id': category.id }) }}">clickÒ</a>
+                <a href="{{  path('home') }}">Acceuil</a>
+
                 {{ category. publishedDate|date("d/m/Y") }}
             {% endif %}
         {% endfor %}

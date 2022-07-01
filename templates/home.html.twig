@@ -1,36 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>home</title>
+{% include '_head.html.twig' %}
 
-    <style>
-        h1 {
-            background-color: red;
-        }
-    </style>
+<h1>ACCEUIL</h1>
+<a href="{{ path('gens_nuls')}}">clickÒ</a>
+{% include '_footer.html.twig' %}
 
-</head>
-
-
-<body>
-<article>
-    {% if category .published %}
-
-    <h1>{{ category. title }}</h1>
-    <p>{{ category. description }}</p>
-    {% else %}
-        <p>Pas d'article publié</p>
-    {% endif %}
-
-
-</article>
-
-
-</body>
-</html>
 
 
