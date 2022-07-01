@@ -23,7 +23,7 @@
             {% if category .published %}
             <li>{{ category. title }}</li>
             <img src="{{ category. image }}" alt="Les gens trop chiants de France">
-                {{ "now"|date("d/m/Y") }}
+                {{ category. publishedDate|date("d/m/Y") }}
             {% endif %}
         {% endfor %}
 
