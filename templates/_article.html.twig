@@ -1,0 +1,19 @@
+
+
+
+
+<article>
+    {% if show_zebi. published %}
+        <h1>Gens Nul</h1>
+        <ul>
+            {% if show_zebi .published %}
+                <li>{{ show_zebi. title }}</li>
+                <img src="{{ show_zebi. image }}" alt="Quelqu'un de nul">
+                {{ show_zebi. publishedDate|date("d/m/Y") }}
+            {% endif %}
+        </ul>
+
+    {% endif %}
+
+</article>
+
